@@ -6,9 +6,34 @@
 		section {
 			width: 1280px;
 			margin: auto 0;
+			clear: both;
 		}
 		.row {
 			width: 1100px;
+		}
+		button {
+			color: #fff;
+			padding: 20px;
+			border-color: #000000;
+			background-color: #000000;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			text-decoration: none;
+
+		}
+		button:hover, a:hover {
+			background-color: #eee;
+			border-color: #eee;
+			color: #000;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.col {
+			float: left;
+			width: 200px;
+			height: auto;
 		}
 	</style>
 	<script>
@@ -19,7 +44,7 @@
         ga('create', 'UA-83943612-1', 'auto', {'allowLinker': true});
        	ga('require', 'linker');
         ga('require', 'displayfeatures');
-        ga('linker:autoLink', ['test4.bcg-tech.com', 'go.teeitup.com']);
+        ga('linker:autoLink', ['jesslewis.github.io/crossdomain', 'go.teeitup.com']);
         ga('send', 'pageview');
         // BCG tracker
         // ga('create', 'UA-41068478-1', 'billycaspergolf.com', {'name': 'bcg'});
@@ -28,7 +53,7 @@
     </script>
 </head>
 <body>
-	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager Removed GTM because it's on UBE -->
 <!-- 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5ZJ47B"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -47,22 +72,33 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>The BE can be slow to load to please take a minute before bouncing!</p>
+		</div>
+	</section>
+
+	<section class="button-section">
+		<div class="row">
+			<div class="col">
+				<a href="https://go.teeitup.com/14075" target="_blank"><button>Book A Tee Time</button></a>
+			</div>
+			<div class="col">
+				<a href="https://go.teeitup.com/14075?utm_source=facebook&utm_medium=cpc&utm_term=tee%20time&utm_campaign=facebook%20utm%20test" target="_blank"><button>Book A Tee Time UTM</button></a>
+			</div>
 		</div>
 	</section>
 
 	<section class="iframe-section">
 
 		<div class="row">
+		<p>The BE can be slow to load to please wait a minute before bouncing!</p>
 
 		<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" scrolling="yes" style="BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; HEIGHT: 1200px; BORDER-TOP: 0px; BORDER-RIGHT: 0px" src='https://go.teeitup.com/14075'>
 		</iframe>
 
-		<script type="text/javascript">function getLinkerParam(c){if(!ga || !ga.getAll){return '';}for(var b=ga.getAll(),a = 0;a<b.length;a++){if(b[a].get('trackingId')===c){return b[a].get('linkerParam');}}return '';}window.onload=function(){var ubeElem=document.getElementById('frmTeeTimes');var dataSrc=(ubeElem) ? ubeElem.getAttribute('data-src') : null;if(ubeElem && dataSrc){ubeElem.src=dataSrc+'?'+getLinkerParam('UA-83943612-1');};}
-		</script>
-
 		</div>
 	</section>
+
+	<script type="text/javascript">function getLinkerParam(c){if(!ga || !ga.getAll){return '';}for(var b=ga.getAll(),a = 0;a<b.length;a++){if(b[a].get('trackingId')===c){return b[a].get('linkerParam');}}return '';}window.onload=function(){var ubeElem=document.getElementById('frmTeeTimes');var dataSrc=(ubeElem) ? ubeElem.getAttribute('data-src') : null;if(ubeElem && dataSrc){ubeElem.src=dataSrc+'?'+getLinkerParam('UA-83943612-1');};}
+	</script>
 
 </body>
 </html>
